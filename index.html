@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>日历</title>
+  <meta name="description" content="日历">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./css/calendar.css">
+</head>
+<body>
+	<!--[if lte IE 8]>
+	  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id ="showTime" class="showTime"></div>
+	<div class="baseBox baseBox-bcg"></div>
+	<div class="baseBox">
+		<div class="left">
+			<div class="left-header">
+				<div class="year-select selects"><div id="yearPre" class="pre">&lt;</div>
+					<div id="year" class="year"><span id="yearN">2016年</span><i class="triangle-down"></i></div>
+					<div id="yearNext" class="next">&gt;</div>
+					<ul id="dropdown1-menubox" class="dropdown1-menubox"></ul>
+				</div>
+				<div class="month-select selects"><div id="monthPre" class="pre">&lt;</div>
+					<div id="month" class="month"><span id="monthN">4月</span><i class="triangle-down"></i></div>
+					<div id="monthNext" class="next">&gt;</div>
+					<ul id="dropdown2-menubox" class="dropdown2-menubox">
+						<li name="month" value="1">1月</li><li name="month" value="2">2月</li><li name="month" value="3">3月</li><li name="month" value="4">4月</li><li name="month" value="5">5月</li><li name="month" value="6">6月</li><li name="month" value="7">7月</li><li name="month" value="8">8月</li><li name="month" value="9">9月</li><li name="month" value="10">10月</li><li name="month" value="11">11月</li><li name="month" value="12">12月</li>
+					</ul>
+				</div>
+				<div class="holiday-select selects">
+					<div id="holiday" class="holiday"><span id="holidayN">2016年假日安排</span><i class="triangle-down"></i></div>
+					<ul id="dropdown3-menubox" class="dropdown3-menubox">
+						<li name="holiday" class="active">2016年假日安排</li><li name="holiday">元旦</li><li name="holiday">春节</li><li name="holiday">清明节</li><li name="holiday">劳动节</li><li name="holiday">中秋节</li><li name="holiday">国庆节</li>
+					</ul>
+				</div>
+				<div class="selects"><div id="backToday" class="backToday">返回今天</div></div>
+			</div>
+			<!-- left-header-end -->
+			<table id="calendar">
+				<tr><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+				<tr name="ctr"><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td><td name="date"></td></tr>
+			</table>
+		</div>
+		<!-- left-end -->
+		<div class="right">
+			<p id="right-date" class="date"></p>
+			<div id="right-number" class="number"></div>
+			<div class="lunar">
+				<p name="right-lunar"></p>
+				<p name="right-lunar"></p>
+				<p name="right-lunar"></p>
+			</div>
+			<div class="split"></div>
+			<table id="almanac">
+				<tr><th>宜</th><th>忌</th></tr>
+				<tr><td>求嗣</td><td>祈福</td></tr>
+				<tr><td>求嗣</td><td>祈福</td></tr>
+				<tr><td>求嗣</td><td>祈福</td></tr>
+				<tr><td>求嗣</td><td>祈福</td></tr>
+				<tr><td>求嗣</td><td>祈福</td></tr>
+			</table>
+			<div  class="split"></div>
+			<a href="">更多&gt;&gt;</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/util.js"></script>
+	<script type="text/javascript" src="./js/calendar.js"></script>
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+	  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	  e.src='https://www.google-analytics.com/analytics.js';
+	  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+	</script>
+</body>
+</html>
